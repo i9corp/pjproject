@@ -7,7 +7,7 @@
 //#define PJ_IMPORT_SPECIFIER __declspec(dllimport)
 
 #define strerror_r(x,y,z) strerror_s(x, y,x)
-
+#define PJ_NATIVE_STRING_IS_UNICODE         0
 #define PJ_CONFIG_MINIMAL_SIZE              1
 #define PJ_OS_HAS_CHECK_STACK	            0
 #define PJ_LOG_MAX_LEVEL		            0
