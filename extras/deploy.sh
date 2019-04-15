@@ -14,7 +14,7 @@ PACKAGE_DIR="${PROJECT_DIR}\dist"
 function build(){
     cd ${PROJECT_DIR}
 
-    ./configure --disable-speex-aec --disable-l16-codec --disable-speex-codec --disable-opencore-amr  --disable-v4l2 ${PACKAGE_DIR}
+    ./configure --disable-speex-aec --disable-l16-codec --disable-speex-codec --disable-opencore-amr  --disable-v4l2 --prefix=${PACKAGE_DIR}
     make dep
     make
     make install
